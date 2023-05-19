@@ -1,5 +1,5 @@
 //select movie poster original image
-let moviePoster = document.querySelector('.movie-poster');
+let moviePoster = document.querySelector('.movie-poster-container img');
 
 //select modal window layer
 let modal = document.querySelector('#myModal');
@@ -12,7 +12,7 @@ let modalImage = document.querySelector('.movie-poster-modal');
 
 moviePoster.addEventListener('click', ()=> {
     modal.style.display = 'block';
-    modalImage.src = moviePoster.src;
+    modalImage.src= moviePoster.src;
 });
 
 closeBtn.addEventListener('click', ()=> {
